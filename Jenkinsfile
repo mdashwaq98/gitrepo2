@@ -1,9 +1,6 @@
 pipeline {
-	agent {
-		node {
-			label 'linux-node'
-			}
-		}
+	agent { label 'linux-node' }
+		
 	stage ('clean'){
 		tools {
 			maven 'maven3.8.6'
@@ -16,4 +13,5 @@ pipeline {
 			sh 'mvn --version'
 			sh 'mvn package'
 			}
+		}
 	}
