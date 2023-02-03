@@ -25,6 +25,7 @@ pipeline {
 			}
 			
 			steps {
+				sh 'git -version'
 				sh 'mvn --version'
 				sh "mvn package"
 			}
