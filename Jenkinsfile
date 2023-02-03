@@ -1,4 +1,4 @@
-pipeilne {
+pipeline {
 	agent {
 		node {
 			label 'linux-node'
