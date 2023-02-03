@@ -12,4 +12,8 @@ pipeilne {
 			sh 'mvn --version'
 			sh 'mvn clean'
 			}
+		steps {
+			sh 'mvn --version'
+			sh 'mvn package'
+			}
 	}
